@@ -19,7 +19,7 @@ $mauxanh: #3c5499 // Xanh
         background: $mauvang
 .home_services
     background: $maungoc
-    min-height: 368px
+    min-height: 600px
     display: flex
     justify-content: center
     align-items: center
@@ -47,7 +47,38 @@ $mauxanh: #3c5499 // Xanh
         max-width: 120px
 .home_ourteam
     background: #e7f1f8
-    min-height: 368px
+    min-height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 4rem
+    color: #3c4761
+    .rounded-circle 
+        border-radius: 50%!important
+    h2
+        position: relative
+        margin-bottom: 1rem
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #c8d9e5
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 120px
+            height: 5px
+            bottom: -8px
+        &:after
+    h4
+        color: #30bae7
+    img
+        max-width: 120px
+.home_skill
+    background: #ffffff
+    min-height: 600px
     display: flex
     justify-content: center
     align-items: center
@@ -61,7 +92,7 @@ $mauxanh: #3c5499 // Xanh
         &:after
             content: ''
             display: block
-            background: #14a58c
+            background: #c8d9e5
             position: absolute
             left: 50%
             transform: translateX(-50%)
@@ -70,6 +101,7 @@ $mauxanh: #3c5499 // Xanh
             height: 5px
             bottom: -8px
         &:after
-            
+    h4
+        color: #30bae7
     img
         max-width: 120px
