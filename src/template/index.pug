@@ -14,12 +14,13 @@ block main
 		section.home_services
 			.container
 				.row
-					.col
-						h2 SERVICES WE PROVIDE
-						p 
-							|We are working with both individuals and businesses from all over the globe 
-							br 
-							|to create awesome websites and applications.
+					- for(x= 1;x<5;x<=4)
+						.col
+							h2 SERVICES WE PROVIDE
+							p
+								|We are working with both individuals and businesses from all over the globe 
+								br 
+								|to create awesome websites and applications.
 				.row
 					.col-sm-6.col-md-3
 						img(src="./img/home_icon_1.png",alt="",srcset="")
@@ -55,7 +56,7 @@ block main
 							|Et harum quidem rerum est
 							br
 							|et expedita distinctio. Nam
-							|libero tempore|
+							|libero tempore
 		section.home_ourteam
 			.container
 				.row
@@ -74,9 +75,11 @@ block main
 							|consetetuer adipiscing elit,
 							br
 							|sed diam nonummy nibh.
-						p
-							a.btn.btn_social_media(href="#")    
-								i.fab.fa-facebook-f			
+						.row
+							.col
+								p
+									a.btn.btn_social_media(href="#")    
+										i.fab.fa-facebook-f
 					.col-sm-6.col-md-3
 						img(src="./img/home_avatar_1.png",alt class="rounded-circle")
 						h3 KATE UPTON

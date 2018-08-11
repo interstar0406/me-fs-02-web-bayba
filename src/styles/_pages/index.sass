@@ -1,0 +1,90 @@
+@import ../_core/all
+.home_slider 
+    +design_section($mauxanh)    
+    h1
+        color: white
+        font-size: 1.2rem
+        letter-spacing: 2px
+    .btn-more
+        background: $mauvang
+.home_services
+    +design_section($maungoc)
+    h2
+        position: relative
+        margin-bottom: 1rem
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #14a58c
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 120px
+            height: 5px
+            bottom: -8px
+        &:after
+            
+    img
+        max-width: 120px
+.home_ourteam
+    background: #e7f1f8
+    min-height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 4rem
+    color: #3c4761
+    .rounded-circle 
+        border-radius: 50%!important
+    h2
+        position: relative
+        margin-bottom: 1rem
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #c8d9e5
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 120px
+            height: 5px
+            bottom: -8px
+        &:after
+    h4
+        color: #30bae7
+    img
+        max-width: 120px
+.home_skill
+    background: #ffffff
+    min-height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 4rem
+    color: #3c4761
+    h2
+        position: relative
+        margin-bottom: 1rem
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #c8d9e5
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 120px
+            height: 5px
+            bottom: -8px
+        &:after
+    h4
+        color: #30bae7
+    img
+        max-width: 120px
