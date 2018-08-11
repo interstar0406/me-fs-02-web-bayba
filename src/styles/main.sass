@@ -25,6 +25,7 @@ $mauxanh: #3c5499 // Xanh
     align-items: center
     text-align: center
     padding: 2rem
+    color: white
     h2
         position: relative
         margin-bottom: 1rem
@@ -32,17 +33,43 @@ $mauxanh: #3c5499 // Xanh
         &:after
             content: ''
             display: block
-            background: black
+            background: #14a58c
             position: absolute
             left: 50%
             transform: translateX(-50%)
         &:before
-            width: 60px
-            height: 10px
+            width: 120px
+            height: 5px
             bottom: -8px
         &:after
-            width: 10px
-            height: 10px
-            bottom: -12px
+            
+    img
+        max-width: 120px
+.home_ourteam
+    background: $maungoc
+    min-height: 368px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 2rem
+    color: white
+    h2
+        position: relative
+        margin-bottom: 1rem
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #14a58c
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 120px
+            height: 5px
+            bottom: -8px
+        &:after
+            
     img
         max-width: 120px
