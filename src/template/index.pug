@@ -14,13 +14,13 @@ block main
 		section.home_services
 			.container
 				.row
-					- for(x= 1;x<5;x<=4)
-						.col
-							h2 SERVICES WE PROVIDE
-							p
-								|We are working with both individuals and businesses from all over the globe 
-								br 
-								|to create awesome websites and applications.
+					- for(x= 1;x<5;x++)
+					.col
+						h2 SERVICES WE PROVIDE
+						p
+							|We are working with both individuals and businesses from all over the globe 
+							br
+							|to create awesome websites and applications.
 				.row
 					.col-sm-6.col-md-3
 						img(src="./img/home_icon_1.png",alt="",srcset="")
@@ -75,11 +75,10 @@ block main
 							|consetetuer adipiscing elit,
 							br
 							|sed diam nonummy nibh.
-						.row
-							.col
-								p
-									a.btn.btn_social_media(href="#")    
-										i.fab.fa-facebook-f
+						.ul
+							.li
+								a.btn.btn_social_media(href="#")    
+									i.fa.fa-facebook
 					.col-sm-6.col-md-3
 						img(src="./img/home_avatar_1.png",alt class="rounded-circle")
 						h3 KATE UPTON
