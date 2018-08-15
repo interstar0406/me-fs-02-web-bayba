@@ -1,83 +1,79 @@
 @import ../_core/all
+body
+	font-family: Roboto
 .home_slider 
-    +design_section($mauxanh,#f0f0f0)    
-    h1
-        color: white
-        font-size: 1.2rem
-        letter-spacing: 2px
-    .btn-more
-        background: $mauvang
+	+design_section($wisteria,$whites)    
+	h1
+		color: $whites
+		font-size: 1.5rem
+		letter-spacing: 2px
+		padding-bottom: 3rem
+	.btn-more
+		color: $whites
+		background: $dangerorange
+		font-size: 2rem
+		padding: 0.5rem
+		transition: .5s all ease-in-out
+		&:hover,
+		&:active
+			border-bottom: 2px solid lighten($dangerorange, 50%)
 .home_services
-    +design_section($maungoc)
-    h2
-        position: relative
-        margin-bottom: 1rem
-        &:before,
-        &:after
-            content: ''
-            display: block
-            background: #14a58c
-            position: absolute
-            left: 50%
-            transform: translateX(-50%)
-        &:before
-            width: 120px
-            height: 5px
-            bottom: -8px
-        &:after
-            
-    img
-        max-width: 120px
+	+design_section($tquoise,$whites)
+	h2
+		+tag_before_after()    
+	img
+		margin: 2rem
+		max-width: 120px
 .home_ourteam
-    +design_section($mautrang,)
-    .rounded-circle 
-        border-radius: 50%!important
+	+design_section($border,$black)
+	padding: 2rem 0
+	img
+		padding: .5rem
+	ul
+		li
+			a
+				display: block
+				height: 2rem
+				width: 2rem
+				line-height: 2rem
+				border-radius: 50%
+				background: $whites
+				color: $brown
+				transition: .5s all ease-in-out
+			&:hover,
+			&:active
+				a					
+					background: $peter-river
+	+media-breakpoint-up(sm)
+		padding: 1rem
+		img
+			height: 50%
+			width: 50%
+	+media-breakpoint-up(md)
+		img
+			height: 80%
+			width: 80%
+	+media-breakpoint-up(lg)
+		img
+			height: 60%
+			width: 60%
+	+media-breakpoint-up(xl)
+					
+
+
+.home_skill
+    +design_section($whites,midnight-blue)
     h2
-        position: relative
-        margin-bottom: 1rem
-        &:before,
-        &:after
-            content: ''
-            display: block
-            background: #c8d9e5
-            position: absolute
-            left: 50%
-            transform: translateX(-50%)
-        &:before
-            width: 120px
-            height: 5px
-            bottom: -8px
-        &:after
-    h4
-        color: #30bae7
+        +tag_before_after()
+    h3
+        color: darken($whites,100%)
     img
         max-width: 120px
-.home_skill
-    background: #ffffff
-    min-height: 600px
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    padding: 4rem
-    color: #3c4761
+.home_portfolio
+    +design_section($dangerorange,darken($whites,100%))
     h2
-        position: relative
-        margin-bottom: 1rem
-        &:before,
-        &:after
-            content: ''
-            display: block
-            background: #c8d9e5
-            position: absolute
-            left: 50%
-            transform: translateX(-50%)
-        &:before
-            width: 120px
-            height: 5px
-            bottom: -8px
-        &:after
-    h4
-        color: #30bae7
+        +tag_before_after()
+    h3
+        color: darken($whites,100%)
     img
         max-width: 120px
