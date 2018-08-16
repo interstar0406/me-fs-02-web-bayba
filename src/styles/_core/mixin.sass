@@ -1,23 +1,26 @@
-=design_section($maunen: #f0f0f0, $mauchu: #000000)
-    min-height: 500px
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    background: $maunen
-    color: $mauchu
+=design_section($maunen: $whites, $mauchu: #black, $min_height: 500px,$justify: center)
+	min-height: $min_height
+	display: flex
+	justify-content: $justify
+	align-items: center
+	text-align: center
+	background: $maunen
+	color: $mauchu
+	+pad(5rem 0 3rem 0)
+	+media-breakpoint-up(md)
+		+pad(5rem 0 5rem 0)
 =tag_before_after($mau: darken($whites,50%))
-    position: relative
-    margin-bottom: 1rem
-    &:before,
-    &:after
-        content: ''
-        display: block
-        background: $mau
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-    &:before
-        width: 120px
-        height: 5px
-        bottom: -8px
+	position: relative
+	margin-bottom: 1rem
+	&:before,
+	&:after
+		content: ''
+		display: block
+		background: $mau
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&:before
+		width: 120px
+		height: 5px
+		bottom: -8px

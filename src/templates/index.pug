@@ -156,23 +156,33 @@ block body
 							a(href="#")
 								i.fa.fa-envelope
 	section.home_skill
-			.container
-				.row
-					.col
-						h2 WE GOT SKILLS!
-						p 
-							|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							br
-							|tempor incididunt ut labore et dolore magna aliqua. 				
-				.row
+		.container
+			.row
+				.col
+					h2 WE GOT SKILLS!
+					p 
+						|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						br
+						|tempor incididunt ut labore et dolore magna aliqua.
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
 					.col-sm-6.col-md-3
-						
-					.col-sm-6.col-md-3
-						
-					.col-sm-6.col-md-3
-						
-					.col-sm-6.col-md-3
-						
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
 	section.home_portfolio
 		.container
 			.row

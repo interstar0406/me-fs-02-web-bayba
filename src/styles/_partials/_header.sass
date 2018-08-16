@@ -1,10 +1,32 @@
+@import ../_core/all
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
+	+pad(2rem 0)
+	+design_section($wisteria,$whites,center)
+	.nav_logo
+		padding-left: 8rem
+		justify-content: center
 		img 
-			max-height: 1rem
+			max-height: 3rem
+	.navbar
+		+pad(2rem 0)
+		justify-content: flex-end
 	+media-breakpoint-up(md)
 		.navbar-brand
 			img 
 				max-height: 2rem
+	ul
+		li
+			a
+				+pad(.5rem)
+				display: inline-block
+				line-height: 2rem
+				background: $wisteria
+				color: $whites
+				transition: .5s all ease-in-out
+				font-size: 1.4rem
+			&:hover,
+			&:active
+				a
+					background: $amethyst
+					color: $whites
+					text-decoration-line: none

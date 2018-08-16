@@ -1,36 +1,55 @@
 @import ../_core/all
 body
 	font-family: Roboto
+	p
+		font-size: 1.2rem
+		margin-top: 2rem
+//section Slider
 .home_slider 
-	+design_section($wisteria,$whites)    
+	+design_section($wisteria,$whites, 368px)    
 	h1
-		color: $whites
-		font-size: 1.5rem
-		letter-spacing: 2px
-		padding-bottom: 3rem
+		margin-bottom: 1.5rem
+		font-size: 2.5rem
+		padding-bottom: 1rem
 	.btn-more
 		color: $whites
 		background: $dangerorange
 		font-size: 2rem
-		padding: 0.5rem
+		padding: 1rem
 		transition: .5s all ease-in-out
 		&:hover,
 		&:active
-			border-bottom: 2px solid lighten($dangerorange, 50%)
+			background: $danger
+//section Service
 .home_services
 	+design_section($tquoise,$whites)
 	h2
-		+tag_before_after()    
+		+tag_before_after(darken($tquoise,10%))
 	img
 		margin: 2rem
 		max-width: 120px
+//section Meet Team
 .home_ourteam
-	+design_section($border,$black)
+	+design_section($border,$black,600px)
+	max-height: 700px
 	padding: 2rem 0
+	h2
+		+tag_before_after(lighten($border,10%))
+	p
+		color: lighten($black,20%)
+		margin-bottom: 1rem
+	h4
+		color: $sen
+		font-size: 1rem
 	img
 		padding: .5rem
+		overflow: hidden
+		display: inline-block
 	ul
+		
+		padding: 1rem
 		li
+			
 			a
 				display: block
 				height: 2rem
@@ -42,7 +61,7 @@ body
 				transition: .5s all ease-in-out
 			&:hover,
 			&:active
-				a					
+				a
 					background: $peter-river
 	+media-breakpoint-up(sm)
 		padding: 1rem
@@ -58,22 +77,65 @@ body
 			height: 60%
 			width: 60%
 	+media-breakpoint-up(xl)
-					
-
-
+//section Skill
 .home_skill
-    +design_section($whites,midnight-blue)
-    h2
-        +tag_before_after()
-    h3
-        color: darken($whites,100%)
-    img
-        max-width: 120px
+	+design_section($whites,midnight-blue)
+	h2
+		+tag_before_after()
+	h3
+		color: $black
+		font-size: 1.5rem
+	img
+		max-width: 120px
+	.progress-circle
+		position: relative
+		display: inline-block
+		margin: 1rem
+		width: 140px
+		height: 140px
+		border-radius: 50%
+		background-color: $whites
+		&:after
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			-webkit-animation: colorload 2s
+			animation: colorload 2s
+		span
+			font-size: 1.5rem
+			color: #8b8b8b
+			position: absolute
+			left: 50%
+			top: 50%
+			display: block
+			width: 120px
+			height: 120px
+			line-height: 120px
+			margin-left: -60px
+			margin-top: -60px
+			text-align: center
+			border-radius: 50%
+			background: #fff
+			z-index: 1
+	.progress-90
+		&:after
+			background-image: linear-gradient(54deg, #30bae7 50%, transparent 50%, transparent), linear-gradient(270deg, #30bae7 50%, #ebebeb 50%, #ebebeb)
+	.progress-75
+		&:after
+			background-image: linear-gradient(0deg, #fc3154 50%, transparent 50%, transparent), linear-gradient(270deg, #fc3154 50%, #ebebeb 50%, #ebebeb)
+	.progress-70
+		&:after
+			background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+	.progress-85
+		&:after
+			background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
 .home_portfolio
-    +design_section($dangerorange,darken($whites,100%))
-    h2
-        +tag_before_after()
-    h3
-        color: darken($whites,100%)
-    img
-        max-width: 120px
+	+design_section($dangerorange,darken($whites,100%))
+	h2
+		+tag_before_after()
+	h3
+		color: darken($whites,100%)
+	img
+		max-width: 120px

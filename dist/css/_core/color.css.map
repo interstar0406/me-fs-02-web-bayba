@@ -1,1 +1,0 @@
-{"version":3,"file":"color.css","sources":["_core/color.sass"],"sourcesContent":["$mautim: #87509c; //Tím\n$maungoc: #17c2a4; // Cyan\n$mauvang: #ffdd99; // Vang\n$maudo: #d74680; // Đỏ\n$mauxanh: #3c5499; // Xanh\n$mautrang: #ffffff;// Trắng\n$mauxam: #e7f1f8;//xám\n$maucam: #eb7d4b;//cam\n"],"names":[],"mappings":""}
