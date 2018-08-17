@@ -2,11 +2,11 @@
 body
 	font-family: Roboto
 	p
-		font-size: 1.2rem
+		font-size: 1.5rem
 		margin-top: 2rem
 //section Slider
 .home_slider 
-	+design_section($wisteria,$whites, 368px)    
+	+design_section($wisteria,$whites, 368px)
 	h1
 		margin-bottom: 1.5rem
 		font-size: 2.5rem
@@ -31,8 +31,6 @@ body
 //section Meet Team
 .home_ourteam
 	+design_section($border,$black,600px)
-	max-height: 700px
-	padding: 2rem 0
 	h2
 		+tag_before_after(lighten($border,10%))
 	p
@@ -43,13 +41,17 @@ body
 		font-size: 1rem
 	img
 		padding: .5rem
+		margin: 1rem 0 2rem 0
 		overflow: hidden
 		display: inline-block
+		height: 250px
+		width: 250px
 	ul
-		
-		padding: 1rem
+		padding: .5rem
+		margin-bottom: 2rem
+		.item.last-child
+					
 		li
-			
 			a
 				display: block
 				height: 2rem
@@ -63,28 +65,23 @@ body
 			&:active
 				a
 					background: $peter-river
-	+media-breakpoint-up(sm)
-		padding: 1rem
-		img
-			height: 50%
-			width: 50%
+					color: lighten($brown,100%)
 	+media-breakpoint-up(md)
 		img
-			height: 80%
-			width: 80%
-	+media-breakpoint-up(lg)
-		img
-			height: 60%
-			width: 60%
-	+media-breakpoint-up(xl)
+			height: 150px
+			width: 150px
 //section Skill
 .home_skill
-	+design_section($whites,midnight-blue)
+	+design_section($whites,$midnight-blue)
 	h2
 		+tag_before_after()
 	h3
 		color: $black
 		font-size: 1.5rem
+		padding-bottom: 2rem
+		padding-top: .5rem
+	.skill-discription
+		padding: 2rem 0 3rem 0
 	img
 		max-width: 120px
 	.progress-circle
@@ -103,9 +100,9 @@ body
 			border-radius: 50%
 			-webkit-animation: colorload 2s
 			animation: colorload 2s
-		span
+		p
 			font-size: 1.5rem
-			color: #8b8b8b
+			color: $brown
 			position: absolute
 			left: 50%
 			top: 50%
@@ -117,7 +114,7 @@ body
 			margin-top: -60px
 			text-align: center
 			border-radius: 50%
-			background: #fff
+			background: $whites
 			z-index: 1
 	.progress-90
 		&:after
@@ -131,11 +128,109 @@ body
 	.progress-85
 		&:after
 			background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+//section portfolio
 .home_portfolio
-	+design_section($dangerorange,darken($whites,100%))
+	+design_section(lighten($dangerorange,30%),$black)
 	h2
 		+tag_before_after()
 	h3
-		color: darken($whites,100%)
+		color: $black
 	img
-		max-width: 120px
+		display: inline-block
+		padding: 2rem
+	ul
+		li
+			a
+				display: inline-block
+				transition: .5s all ease-in-out
+				color: $black
+				background: $dangerorange
+				font-size: 1rem
+				width: 5rem
+				padding: .5rem 1rem
+				margin: .5rem 1rem
+				text-decoration-line: none
+				&:hover,
+				&:active
+					background: $whites
+	.bnt.bnt-more
+		display: inline-block
+		color: $whites
+		background: $sen
+		font-size: 2rem
+		padding: 1rem
+		text-decoration-line: none
+		transition: .5s all ease-in-out
+		&:hover,
+		&:active
+			background: lighten($sen,20%)
+	+media-breakpoint-down(md)
+		ul
+			li
+				a
+					margin: .5rem 0
+		.bnt.bnt-more
+			font-size: 1rem
+//section about
+.home_about
+	+design_section(darken($pink,30%),$whites,400px)
+	h2
+		+tag_before_after(darken($pink,10%))
+	h4
+		color: lighten($carrot,10%)
+		font-size: 1rem
+	img
+		border-radius: 50%
+		border: 1px solid $whites
+		margin-top: 2rem
+		width: 100px
+		height: 100px
+	+media-breakpoint-up(md)
+		.about_content
+			img
+				display: inline-block
+				margin: 2rem 0 1rem 0
+				width: 100px
+				height: 100px
+			p,
+			h3,
+			h4,
+				text-align: left
+	+media-breakpoint-up(lg)
+		font-size: 2rem
+		.about_content
+			img
+				display: inline-block
+				margin: 2rem 0 1rem 0
+				width: 100px
+				height: 100px
+			p,
+			h3,
+			h4,
+				text-align: left
+//saction form
+.home_form
+	+design_section($form-xanh,$whites,700px)
+	.home_form_width
+		+media-breakpoint-up(sm)
+			max-width: 60%
+	h2
+		+tag_before_after($form-input-xanh)
+	p
+		font-size: 1rem
+	input,
+	textarea
+		background: $form-input-xanh
+		border-color: $form-input-xanh
+		&::-webkit-input-placeholder,
+		&::-moz-placeholder,
+		&:-ms-input-placeholder,
+		&:-moz-placeholder
+			color: $dangerorange
+		&:focus,
+		&:active
+			background: lighten($form-input-xanh,20%)
+			border-color: lighten($form-input-xanh,20%)
+	button
+		background: $sen
+		

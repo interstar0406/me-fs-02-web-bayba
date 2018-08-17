@@ -27,7 +27,7 @@ block body
 						|to create awesome websites and applications.
 			.row
 				.col-sm-6.col-md-3
-					img(src="./img/home_icon_1.png",alt="",srcset="")
+					img.img-fluid(src="./img/home_icon_1.png",alt="",srcset="")
 					h3 BRANDING
 					p 
 						|Lolem ípum dolor sit amet, 
@@ -36,7 +36,7 @@ block body
 						br
 						|sed diam nonummy nibh.
 				.col-sm-6.col-md-3
-					img(src="./img/home_icon_2.png",alt="",srcset="")
+					img.img-fluid(src="./img/home_icon_2.png",alt="",srcset="")
 					h3 DESIGN
 					p 
 						|Sed up perspiciatis unde
@@ -45,7 +45,7 @@ block body
 						br
 						|voluptatem.
 				.col-sm-6.col-md-3
-					img(src="./img/home_icon_3.png",alt="",srcset="")
+					img.img-fluid(src="./img/home_icon_3.png",alt="",srcset="")
 					h3 DEVELOPMENT
 					p 
 						|At vero eos et accusamus et
@@ -54,7 +54,7 @@ block body
 						br
 						|blanditiis praesentium.
 				.col-sm-6.col-md-3
-					img(src="./img/home_icon_4.png",alt="",srcset="")
+					img.img-fluid(src="./img/home_icon_4.png",alt="",srcset="")
 					h3 ROCKET SCIENCE
 					p 
 						|Et harum quidem rerum est
@@ -70,7 +70,7 @@ block body
 						|We are a small team of designers and developers, who help brands  with big ideas.	
 			.row
 				.col-sm-6.col-md-3
-					img(src="./img/home_avatar_1.png",alt class="rounded-circle")
+					img.img-fluid(src="./img/home_avatar_1.png",alt class="rounded-circle")
 					h3 ANNE HATHAWAY 
 					h4 CEO / Marketing Guru
 					p 
@@ -93,7 +93,7 @@ block body
 							a(href="#")
 								i.fa.fa-envelope
 				.col-sm-6.col-md-3
-					img(src="./img/home_avatar_1.png",alt class="rounded-circle")
+					img.img-fluid(src="./img/home_avatar_1.png",alt class="rounded-circle")
 					h3 KATE UPTON
 					h4 Creative Director
 					p 
@@ -113,7 +113,7 @@ block body
 							a(href="#")
 								i.fa.fa-envelope
 				.col-sm-6.col-md-3
-					img(src="./img/home_avatar_1.png",alt class="rounded-circle")
+					img.img-fluid(src="./img/home_avatar_1.png",alt class="rounded-circle")
 					h3 OLIVIA WILDE
 					h4 Lead Designer
 					p 
@@ -136,7 +136,7 @@ block body
 							a(href="#")
 								i.fa.fa-envelope
 				.col-sm-6.col-md-3
-					img(src="./img/home_avatar_1.png",alt class="rounded-circle")
+					img.img-fluid(src="./img/home_avatar_1.png",alt class="rounded-circle")
 					h3 ASHLEY GREEN
 					h4 SEO / Developer
 					p 
@@ -160,29 +160,27 @@ block body
 			.row
 				.col
 					h2 WE GOT SKILLS!
-					p 
+					p.skill-discription
 						|Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						br
 						|tempor incididunt ut labore et dolore magna aliqua.
-			.row.mt-5
-				-for(x = 1;x < 5;x++)
-					.col-sm-6.col-md-3
-						-if(x==1)
-							.progress-circle.progress-90
-								span 90%
-							h3 WEB DESIGN
-						-if(x==2)
-							.progress-circle.progress-75
-								span 75%
-							h3 HTML / CSS
-						-if(x==3)
-							.progress-circle.progress-70
-								span 70%
-							h3 GRAPHIC DESIGN
-						-if(x==4)
-							.progress-circle.progress-85
-								span 85%
-							h3 UI / UX
+			.row
+				.col-sm-6.col-md-3
+					.progress-circle.progress-90
+						p 90%
+					h3 WEB DESIGN
+				.col-sm-6.col-md-3
+					.progress-circle.progress-75
+						p 75%
+					h3 HTML / CSS
+				.col-sm-6.col-md-3
+					.progress-circle.progress-70
+						p 70%
+					h3 GRAPHIC DESIGN
+				.col-sm-6.col-md-3
+					.progress-circle.progress-85
+						p 85%
+					h3 UI / UX
 	section.home_portfolio
 		.container
 			.row
@@ -191,39 +189,121 @@ block body
 					p
 						|Neque porro quisquam est, quia dolorem ipsum quia dolor sit amet
 						br
-						|consectetur, adipisci velit, sed quia non numquam		
+						|consectetur, adipisci velit, sed quia non numquam
 			.row
-				.col-sm-6.col-md-3
-					p
-						a.bnt.btn-more-1(href="#") ALL
-				.col-sm-6.col-md-3
-					p
-						a.bnt.btn-more-1(href="#") WEB
-				.col-sm-6.col-md-3
-					p
-						a.bnt.btn-more-1(href="#") APPS
-				.col-sm-6.col-md-3
-					p
-						a.bnt.btn-more-1(href="#") ICONS
+				.col
+					ul.list-inline-item
+						li.list-inline-item
+							a(href="#") ALL
+						li.list-inline-item
+							a(href="#") WEB
+						li.list-inline-item
+							a(href="#") APPS
+						li.list-inline-item
+							a(href="#") ICONS
 			.row
-				.col-sm-6.col-md-3
-					img(src="./img/home_portfolio_1.png", alt="",srcset="")
+				.col-lg-6.col-md-6.col-sm-12
+					img.img-fluid(src="./img/home_portfolio_1.png", alt="",srcset="")
 					h4
 						|ISOMETRIC PERSPECTIVE  MOCK-UP
-				.col-sm-6.col-md-3
-					img(src="./img/home_portfolio_2.png", alt="",srcset="")
+				.col-lg-6.col-md-6.col-sm-12
+					img.img-fluid(src="./img/home_portfolio_2.png", alt="",srcset="")
 					h4
 						|ISOMETRIC PERSPECTIVE  MOCK-UP
-			.row
-				.col-sm-6.col-md-3
-					img(src="./img/home_portfolio_3.png", alt="",srcset="")
+				.col-lg-6.col-md-6.col-sm-12
+					img.img-fluid(src="./img/home_portfolio_3.png", alt="",srcset="")
 					h4
 						|ISOMETRIC PERSPECTIVE  MOCK-UP
-				.col-sm-6.col-md-3
-					img(src="./img/home_portfolio_4.png", alt="",srcset="")
+				.col-lg-6.col-md-6.col-sm-12
+					img.img-fluid(src="./img/home_portfolio_4.png", alt="",srcset="")
 					h4
 						|ISOMETRIC PERSPECTIVE  MOCK-UP
 			.row
 				.col
 					p
-						a.bnt.bnt-more-2(href="#") LOAD MORE PROJECT
+						a.bnt.bnt-more(href="#") LOAD MORE PROJECT
+	section.home_about
+		.container
+			.row
+				.col
+					h2 WHAT PEOPLE SAY ABOUT US
+					p
+						|Our clients love us!
+			.row.about_content
+				.col-lg-6.col-md-6.col-sm-12
+					.row
+						.col-sm-12.col-md-3
+							img.img-fluid(src="../img/logo.png",alt class="rounded-circle", srcset="")
+						.col-sm-12.col-md-9
+							p
+								i
+									|"Nullam dabipus blandit orci, viverra
+									br
+									|gravida dui lobortis eget. Maecenas
+									br
+									|fringilla urna eu nisl scelerisque."
+							h3 CHANEL IMAN
+							h4 CEO of Pinterest
+				.col-lg-6.col-md-6.col-sm-12
+					.row
+						.col-sm-12.col-md-3
+							img.img-fluid(src="../img/logo.png",alt class="rounded-circle", srcset="")
+						.col-sm-12.col-md-9
+							p
+								i
+									|"Nullam dabipus blandit orci, viverra
+									br
+									|gravida dui lobortis eget. Maecenas
+									br
+									|fringilla urna eu nisl scelerisque."
+							h3 CHANEL IMAN
+							h4 CEO of Pinterest
+				.col-lg-6.col-md-6.col-sm-12
+					.row
+						.col-sm-12.col-md-3
+							img.img-fluid(src="../img/logo.png",alt class="rounded-circle", srcset="")
+						.col-sm-12.col-md-9
+							p
+								i
+									|"Nullam dabipus blandit orci, viverra
+									br
+									|gravida dui lobortis eget. Maecenas
+									br
+									|fringilla urna eu nisl scelerisque."
+							h3 CHANEL IMAN
+							h4 CEO of Pinterest
+				.col-lg-6.col-md-6.col-sm-12
+					.row
+						.col-sm-12.col-md-3
+							img.img-fluid(src="../img/logo.png",alt class="rounded-circle", srcset="")
+						.col-sm-12.col-md-9
+							p
+								i
+									|"Nullam dabipus blandit orci, viverra
+									br
+									|gravida dui lobortis eget. Maecenas
+									br
+									|fringilla urna eu nisl scelerisque."
+							h3 CHANEL IMAN
+							h4 CEO of Pinterest
+	section.home_form
+		.container.home_form_width
+			.row
+				.col
+					.title-page.title-xam
+						h2 GET IN TOUCH
+						p
+							|1600 pennsylvania Ave NW, Washington, DC, 20500, United States of Ameria. Tel: (202) 456-1111
+			.form-group.row.mt-5
+				.col-sm-6.mb-3
+					input.form-control(type="text" placeholder="Your Name")
+				.col-sm-6
+					input.form-control(type="text" placeholder="Your Email")
+			.form-group.row
+				.col
+					textarea.form-control(cols="30" rows="10" placeholder="Your Message")
+			.form-group.row
+				.col
+					button.btn.btn-primary(type="submit") SEND MESSAGE
+
+
