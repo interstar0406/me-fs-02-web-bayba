@@ -6323,11 +6323,7 @@ html, body {
     width: auto; } }
 
 header {
-  padding-top: 2rem;
-  padding-right: 0;
-  padding-bottom: 2rem;
-  padding-left: 0;
-  min-height: center;
+  min-height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6345,31 +6341,24 @@ header {
       padding-bottom: 5rem;
       padding-left: 0; } }
   header .nav_logo {
-    padding-left: 8rem;
-    justify-content: center; }
+    display: block;
+    margin-bottom: 2rem; }
     header .nav_logo img {
       max-height: 3rem; }
-  header .navbar {
-    padding-top: 2rem;
-    padding-right: 0;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    justify-content: flex-end; }
-  @media (min-width: 768px) {
-    header .navbar-brand img {
-      max-height: 2rem; } }
   header ul li a {
-    padding: 0.5rem;
+    padding: .5rem;
     display: inline-block;
-    line-height: 2rem;
-    background: #8e44ad;
     color: #ffffff;
     transition: .5s all ease-in-out;
-    font-size: 1.4rem; }
+    font-size: rem;
+    text-decoration-line: none; }
   header ul li:hover a, header ul li:active a {
     background: #9b59b6;
     color: #ffffff;
     text-decoration-line: none; }
+  @media (min-width: 768px) {
+    header {
+      padding-bottom: 0rem; } }
 
 footer {
   background: #2e4074;
@@ -6654,7 +6643,7 @@ body {
     color: #000; }
   .home_portfolio img {
     display: inline-block;
-    padding: 2rem; }
+    padding: 3rem 0 2rem 0; }
   .home_portfolio ul li a {
     display: inline-block;
     transition: .5s all ease-in-out;
