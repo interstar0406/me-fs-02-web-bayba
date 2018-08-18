@@ -92,6 +92,7 @@ body
 		padding: 2rem 0 3rem 0
 	img
 		max-width: 120px
+//char round
 	.progress-circle
 		position: relative
 		display: inline-block
@@ -230,11 +231,8 @@ body
 	textarea
 		background: $form-input-xanh
 		border-color: $form-input-xanh
-		&::-webkit-input-placeholder,
-		&::-moz-placeholder,
-		&:-ms-input-placeholder,
-		&:-moz-placeholder
-			color: $dangerorange
+		&::-webkit-input-placeholder
+			color: lighten($form-xanh, 30%)
 		&:focus,
 		&:active
 			background: lighten($form-input-xanh,20%)
