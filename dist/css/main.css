@@ -6494,10 +6494,11 @@ body {
       bottom: -8px; }
   .home_ourteam p {
     color: #333333;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding: 0 2rem; }
   .home_ourteam h4 {
     color: #2196f3;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .home_ourteam img {
     padding: .5rem;
     margin: 1rem 0 2rem 0;
@@ -6520,10 +6521,15 @@ body {
     .home_ourteam ul li:hover a, .home_ourteam ul li:active a {
       background: #3498db;
       color: white; }
+  .home_ourteam img {
+    height: 150px;
+    width: 150px; }
+  @media (min-width: 576px) {
+    .home_ourteam .list_item_p p {
+      min-height: 190px; } }
   @media (min-width: 768px) {
-    .home_ourteam img {
-      height: 150px;
-      width: 150px; } }
+    .home_ourteam .list_item_p p {
+      min-height: 156px; } }
 
 .home_skill {
   min-height: 500px;
